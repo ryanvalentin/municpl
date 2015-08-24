@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>94f67fbe-89bd-436a-8125-fcc88b9db5e7</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Municpl.Core</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Engines\BartDataEngine.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Engines\BaseDataEngine.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Engines\CaltrainDataEngine.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Engines\IDataEngine.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Engines\NextbusDataEngine.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Models\BaseNextbusModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Models\GeoCoordinate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Models\NextbusAgency.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Models\NextbusDirection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Models\NextbusRoute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Models\NextbusStop.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Data\Fixtures\Nextbus\AgencyList.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Fixtures\Nextbus\RouteList.xml" />
+  </ItemGroup>
+</Project>
