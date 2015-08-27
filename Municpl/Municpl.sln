@@ -7,20 +7,27 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Municpl", "Municpl\Municpl.
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Municpl.Core", "Municpl.Core\Municpl.Core.shproj", "{94F67FBE-89BD-436A-8125-FCC88B9DB5E7}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Municpl.Core.Mvvm", "Municpl.Core.Mvvm\Municpl.Core.Mvvm.shproj", "{08D01263-AD9B-4AB7-A9BB-F1CE60721725}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Municpl.Core\Municpl.Core.projitems*{94f67fbe-89bd-436a-8125-fcc88b9db5e7}*SharedItemsImports = 13
+		Municpl.Core.Mvvm\Municpl.Core.Mvvm.projitems*{1a1aa517-21ab-4ddd-9be1-124a41b86587}*SharedItemsImports = 4
 		Municpl.Core\Municpl.Core.projitems*{1a1aa517-21ab-4ddd-9be1-124a41b86587}*SharedItemsImports = 4
+		Municpl.Core.Mvvm\Municpl.Core.Mvvm.projitems*{08d01263-ad9b-4ab7-a9bb-f1ce60721725}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|ARM = Release|ARM
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A1AA517-21AB-4DDD-9BE1-124A41B86587}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{1A1AA517-21AB-4DDD-9BE1-124A41B86587}.Debug|ARM.ActiveCfg = Debug|ARM
 		{1A1AA517-21AB-4DDD-9BE1-124A41B86587}.Debug|ARM.Build.0 = Debug|ARM
 		{1A1AA517-21AB-4DDD-9BE1-124A41B86587}.Debug|ARM.Deploy.0 = Debug|ARM
@@ -30,6 +37,7 @@ Global
 		{1A1AA517-21AB-4DDD-9BE1-124A41B86587}.Debug|x86.ActiveCfg = Debug|x86
 		{1A1AA517-21AB-4DDD-9BE1-124A41B86587}.Debug|x86.Build.0 = Debug|x86
 		{1A1AA517-21AB-4DDD-9BE1-124A41B86587}.Debug|x86.Deploy.0 = Debug|x86
+		{1A1AA517-21AB-4DDD-9BE1-124A41B86587}.Release|Any CPU.ActiveCfg = Release|x86
 		{1A1AA517-21AB-4DDD-9BE1-124A41B86587}.Release|ARM.ActiveCfg = Release|ARM
 		{1A1AA517-21AB-4DDD-9BE1-124A41B86587}.Release|ARM.Build.0 = Release|ARM
 		{1A1AA517-21AB-4DDD-9BE1-124A41B86587}.Release|ARM.Deploy.0 = Release|ARM

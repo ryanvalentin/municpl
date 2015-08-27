@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>08d01263-ad9b-4ab7-a9bb-f1ce60721725</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Municpl.Core</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Services\NavigationService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AgencyItemViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AgencyListViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\IMunicplViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MunicplBaseListViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\FavoritesListViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MunicplBaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\RouteItemViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\RouteListViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ViewModelLocator.cs" />
+  </ItemGroup>
+</Project>

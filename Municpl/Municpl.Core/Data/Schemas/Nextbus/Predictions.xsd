@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="body">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="predictions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="direction">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="prediction">
+                      <xs:complexType>
+                        <xs:attribute name="epochTime" type="xs:unsignedLong" use="required" />
+                        <xs:attribute name="seconds" type="xs:unsignedShort" use="required" />
+                        <xs:attribute name="minutes" type="xs:unsignedByte" use="required" />
+                        <xs:attribute name="isDeparture" type="xs:boolean" use="required" />
+                        <xs:attribute name="dirTag" type="xs:string" use="required" />
+                        <xs:attribute name="vehicle" type="xs:unsignedShort" use="required" />
+                        <xs:attribute name="vehiclesInConsist" type="xs:unsignedByte" use="required" />
+                        <xs:attribute name="block" type="xs:unsignedShort" use="required" />
+                        <xs:attribute name="tripTag" type="xs:unsignedInt" use="required" />
+                        <xs:attribute name="affectedByLayover" type="xs:boolean" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="title" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element maxOccurs="unbounded" name="message">
+                <xs:complexType>
+                  <xs:attribute name="text" type="xs:string" use="required" />
+                  <xs:attribute name="priority" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="agencyTitle" type="xs:string" use="required" />
+            <xs:attribute name="routeTitle" type="xs:string" use="required" />
+            <xs:attribute name="routeTag" type="xs:string" use="required" />
+            <xs:attribute name="stopTitle" type="xs:string" use="required" />
+            <xs:attribute name="stopTag" type="xs:unsignedShort" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="copyright" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

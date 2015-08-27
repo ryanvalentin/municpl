@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<body copyright="All data copyright San Francisco Muni 2015.">
+  <predictions agencyTitle="San Francisco Muni" routeTitle="N-Judah" routeTag="N" stopTitle="Civic Center Station Outbound" stopTag="6997">
+    <direction title="Outbound to Ocean Beach via Downtown">
+      <prediction epochTime="1440438418581" seconds="321" minutes="5" isDeparture="false" dirTag="N____O_F00" vehicle="1491" block="9701" tripTag="6832689" />
+      <prediction epochTime="1440439024995" seconds="927" minutes="15" isDeparture="false" affectedByLayover="true" dirTag="N____O_F00" vehicle="1511" block="9702" tripTag="6832690" />
+      <prediction epochTime="1440439532995" seconds="1435" minutes="23" isDeparture="false" affectedByLayover="true" dirTag="N____O_F00" vehicle="1440" block="9703" tripTag="6832691" />
+      <prediction epochTime="1440440132995" seconds="2035" minutes="33" isDeparture="false" affectedByLayover="true" dirTag="N____O_F00" vehicle="1476" block="9716" tripTag="6832692" />
+      <prediction epochTime="1440440732995" seconds="2635" minutes="43" isDeparture="false" affectedByLayover="true" dirTag="N____O_F00" vehicle="1415" block="9704" tripTag="6832693" />
+    </direction>
+    <message text="Nightly subway shutdown until Jan. 2016 from 9:30pm to 1:30am" priority="High"/>
+    <message text="Go to sfmta.com 4 Email/Text Alerts." priority="Low"/>
+    <message text="Bus shuttles during nightly subway shutdown, 9:30pm to 1:30am" priority="High"/>
+    <message text="We&apos;re on Twitter: @sfmta_muni" priority="Low"/>
+    <message text="No Elevator at&#10;Civic Center Sta." priority="Normal"/>
+  </predictions>
+  <predictions agencyTitle="San Francisco Muni" routeTitle="N-Judah" routeTag="N" stopTitle="Carl St &amp; Cole St" stopTag="3909">
+    <direction title="Outbound to Ocean Beach via Downtown">
+      <prediction epochTime="1440438124719" seconds="27" minutes="0" isDeparture="false" dirTag="N____O_F00" vehicle="1482" vehiclesInConsist="2" block="9712" tripTag="6832687" />
+      <prediction epochTime="1440438662563" seconds="565" minutes="9" isDeparture="false" dirTag="N____O_F00" vehicle="1527" block="9713" tripTag="6832688" />
+      <prediction epochTime="1440438993647" seconds="896" minutes="14" isDeparture="false" dirTag="N____O_F00" vehicle="1491" block="9701" tripTag="6832689" />
+      <prediction epochTime="1440439600061" seconds="1502" minutes="25" isDeparture="false" affectedByLayover="true" dirTag="N____O_F00" vehicle="1511" block="9702" tripTag="6832690" />
+      <prediction epochTime="1440440108061" seconds="2010" minutes="33" isDeparture="false" affectedByLayover="true" dirTag="N____O_F00" vehicle="1440" block="9703" tripTag="6832691" />
+    </direction>
+    <message text="Nightly subway shutdown until Jan. 2016 from 9:30pm to 1:30am" priority="High"/>
+    <message text="Go to sfmta.com 4 Email/Text Alerts." priority="Low"/>
+    <message text="Bus shuttles during nightly subway shutdown, 9:30pm to 1:30am" priority="High"/>
+    <message text="We&apos;re on Twitter: @sfmta_muni" priority="Low"/>
+    <message text="No Elevator at&#10;Civic Center Sta." priority="Normal"/>
+  </predictions>
+</body>

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Municpl.Core.ViewModels;
+using Municpl.Views;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,6 +24,8 @@ namespace Municpl
     /// </summary>
     sealed partial class App : Application
     {
+        private static MainViewModel _viewModel = null;
+
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -43,7 +47,7 @@ namespace Municpl
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
             {
-                this.DebugSettings.EnableFrameRateCounter = true;
+                //this.DebugSettings.EnableFrameRateCounter = true;
             }
 #endif
 

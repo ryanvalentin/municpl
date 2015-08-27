@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Municpl.Core.Data.Engines
+namespace Municpl.Core.Data.Services
 {
-    public interface IDataEngine
+    class CaltrainDataService
     {
     }
 }

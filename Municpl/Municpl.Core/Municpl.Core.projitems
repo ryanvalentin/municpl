@@ -9,20 +9,36 @@
     <Import_RootNamespace>Municpl.Core</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Data\Engines\BartDataEngine.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Data\Engines\BaseDataEngine.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Data\Engines\CaltrainDataEngine.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Data\Engines\IDataEngine.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Data\Engines\NextbusDataEngine.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Services\BartDataService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Services\BaseDataService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Services\CaltrainDataService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Services\DataEngineErrorEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Services\DataEngineType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Services\INextbusDataService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Services\NextbusDataService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\Models\BaseNextbusModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\Models\GeoCoordinate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\Models\NextbusAgency.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\Models\NextbusDirection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Models\NextbusMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Models\NextbusPrediction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Models\NextbusPredictions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Models\NextbusPredictionsDirection.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\Models\NextbusRoute.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\Models\NextbusStop.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)Data\Fixtures\Nextbus\AgencyList.xml" />
-    <Content Include="$(MSBuildThisFileDirectory)Data\Fixtures\Nextbus\RouteList.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Fixtures\Nextbus\agencyList.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Fixtures\Nextbus\temp.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Fixtures\Nextbus\predictions.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Fixtures\Nextbus\predictionsForMultiStops.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Fixtures\Nextbus\routeConfig.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)Data\Fixtures\Nextbus\routeList.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Data\Schemas\Nextbus\AgencyList.xsd" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Schemas\Nextbus\Predictions.xsd" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Schemas\Nextbus\RouteConfig.xsd" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Schemas\Nextbus\RouteList.xsd" />
   </ItemGroup>
 </Project>

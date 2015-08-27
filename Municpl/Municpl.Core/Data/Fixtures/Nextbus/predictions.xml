@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<body copyright="All data copyright San Francisco Muni 2015.">
+  <predictions agencyTitle="SF Muni" routeTitle="N-Judah" routeTag="N" stopTitle="Judah St &amp; 28th Ave" stopTag="5205">
+    <direction title="Outbound to Ocean Beach via Downtown">
+      <prediction epochTime="1440385928702" seconds="112" minutes="1" isDeparture="false" dirTag="N____O_F00" vehicle="1549" vehiclesInConsist="2" block="9701" tripTag="6833671" />
+      <prediction epochTime="1440386425024" seconds="608" minutes="10" isDeparture="false" dirTag="N____O_F00" vehicle="1427" vehiclesInConsist="2" block="9702" tripTag="6833544" />
+      <prediction epochTime="1440387760300" seconds="1944" minutes="32" isDeparture="false" dirTag="N____O_F00" vehicle="1424" vehiclesInConsist="2" block="9710" tripTag="6833545" />
+      <prediction epochTime="1440388370832" seconds="2554" minutes="42" isDeparture="false" affectedByLayover="true" dirTag="N____O_F00" vehicle="1499" vehiclesInConsist="2" block="9704" tripTag="6833546" />
+      <prediction epochTime="1440389390832" seconds="3574" minutes="59" isDeparture="false" affectedByLayover="true" dirTag="N____O_F00" vehicle="1460" vehiclesInConsist="2" block="9707" tripTag="6833547" />
+    </direction>
+    <message text="Nightly subway shutdown until Jan. 2016 from 9:30pm to 1:30am" priority="High"/>
+    <message text="Go to sfmta.com 4 Email/Text Alerts." priority="Low"/>
+    <message text="Bus shuttles during nightly subway shutdown, 9:30pm to 1:30am" priority="High"/>
+    <message text="We&apos;re on Twitter: @sfmta_muni" priority="Low"/>
+  </predictions>
+</body>
