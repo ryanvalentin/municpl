@@ -29,7 +29,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)Data\Fixtures\Nextbus\agencyList.xml" />
-    <Content Include="$(MSBuildThisFileDirectory)Data\Fixtures\Nextbus\temp.png" />
     <Content Include="$(MSBuildThisFileDirectory)Data\Fixtures\Nextbus\predictions.xml" />
     <Content Include="$(MSBuildThisFileDirectory)Data\Fixtures\Nextbus\predictionsForMultiStops.xml" />
     <Content Include="$(MSBuildThisFileDirectory)Data\Fixtures\Nextbus\routeConfig.xml" />

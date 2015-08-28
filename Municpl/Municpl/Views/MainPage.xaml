@@ -10,14 +10,111 @@
     >
 
     <local:BaseNavigationAwarePage.Resources>
-
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/StaticResources/SplitViewStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </local:BaseNavigationAwarePage.Resources>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel>
-            <TextBlock Text="{x:Bind ViewModel.Title, Mode=OneWay}" Style="{StaticResource HeaderTextBlockStyle}" />
-            <HyperlinkButton x:Name="agencyListHyperlinkButton" Content="Agency List Page" Click="agencyListHyperlinkButton_Click" />
-        </StackPanel>
-        
-    </Grid>
+    <SplitView x:Name="mainPageSplitView" PaneBackground="{StaticResource SplitViewBackgroundBrush}" DisplayMode="CompactInline" IsPaneOpen="True" CompactPaneLength="50" OpenPaneLength="180">
+        <SplitView.Pane>
+            <StackPanel>
+                <!-- Menu -->
+                <RadioButton x:Name="menuRadioButton" Style="{StaticResource SplitViewMenuButtonStyle}" Click="menuRadioButton_Click" />
+                
+                <!-- Favorites -->
+                <RadioButton x:Name="favoritesRadioButton" Tag="&#xE0A5;" Content="Favorites" IsChecked="True" Style="{StaticResource SplitViewNavButtonStyle}" Checked="favoritesRadioButton_Checked" />
+
+                <!-- Agencies -->
+                <RadioButton x:Name="muniRadioButton" Tag="&#xEB47;" Content="MUNI" Style="{StaticResource SplitViewNavButtonStyle}" Checked="muniRadioButton_Checked" />
+                <RadioButton x:Name="bartRadioButton" Tag="&#xEB4D;" Content="BART" Style="{StaticResource SplitViewNavButtonStyle}" Checked="bartRadioButton_Checked" />
+                <RadioButton x:Name="actransitRadioButton" Tag="&#xEB47;" Content="AC Transit" Style="{StaticResource SplitViewNavButtonStyle}" Checked="actransitRadioButton_Checked" />
+                <RadioButton x:Name="caltrainRadioButton" Tag="&#xEB4D;" Content="Caltrain" Style="{StaticResource SplitViewNavButtonStyle}" Checked="caltrainRadioButton_Checked" />
+                
+                <!-- Settings -->
+                <RadioButton x:Name="settingsRadioButton" Tag="&#xE115;" Content="Settings" Style="{StaticResource SplitViewNavButtonStyle}" Checked="settingsRadioButton_Checked" />
+            </StackPanel>
+            <!--
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Button x:Name="hamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Width="50" Height="50" Background="Transparent" Click="hamburgerButton_Click" />
+                <ListBox x:Name="menuListBox" Grid.Row="1">
+                    <ListBoxItem>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="&#xE0A5;" FontFamily="Segoe MDL2 Assets" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="0,2,0,0" />
+                            <TextBlock Text="Favorites" Grid.Column="1" Style="{StaticResource FlyoutPickerTitleTextBlockStyle}" />
+                        </Grid>
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="&#xEB47;" FontFamily="Segoe MDL2 Assets" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="0,2,0,0" />
+                            <TextBlock Text="MUNI" Grid.Column="1" Style="{StaticResource FlyoutPickerTitleTextBlockStyle}" />
+                        </Grid>
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="&#xEB4D;" FontFamily="Segoe MDL2 Assets" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="0,2,0,0" />
+                            <TextBlock Text="BART" Grid.Column="1" Style="{StaticResource FlyoutPickerTitleTextBlockStyle}" />
+                        </Grid>
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="&#xEB4D;" FontFamily="Segoe MDL2 Assets" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="0,2,0,0" />
+                            <TextBlock Text="Caltrain" Grid.Column="1" Style="{StaticResource FlyoutPickerTitleTextBlockStyle}" />
+                        </Grid>
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="&#xEB47;" FontFamily="Segoe MDL2 Assets" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="0,2,0,0" />
+                            <TextBlock Text="AC Transit" Grid.Column="1" Style="{StaticResource FlyoutPickerTitleTextBlockStyle}" />
+                        </Grid>
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="&#xE115;" FontFamily="Segoe MDL2 Assets" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="0,2,0,0" />
+                            <TextBlock Text="Settings" Grid.Column="1" Style="{StaticResource FlyoutPickerTitleTextBlockStyle}" />
+                        </Grid>
+                    </ListBoxItem>
+                </ListBox>
+            </Grid>
+            -->
+        </SplitView.Pane>
+        <SplitView.Content>
+            <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <StackPanel>
+                    <TextBlock Text="{x:Bind ViewModel.Title, Mode=OneWay}" Style="{StaticResource HeaderTextBlockStyle}" />
+                    <HyperlinkButton x:Name="agencyListHyperlinkButton" Content="Agency List Page" Click="agencyListHyperlinkButton_Click" />
+                </StackPanel>
+
+            </Grid>
+        </SplitView.Content>
+    </SplitView>
 </local:BaseNavigationAwarePage>

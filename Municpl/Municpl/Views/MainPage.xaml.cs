@@ -40,5 +40,40 @@ namespace Municpl.Views
         {
             ViewModel.NavigationService.NavigateTo(nameof(AgencyListPage));
         }
+
+        private void menuRadioButton_Click(object sender, RoutedEventArgs e)
+        {
+            mainPageSplitView.IsPaneOpen = !mainPageSplitView.IsPaneOpen;
+        }
+
+        private void settingsRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void actransitRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void caltrainRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void bartRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void muniRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void favoritesRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
