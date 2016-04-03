@@ -9,7 +9,7 @@
     <Import_RootNamespace>Municpl.Core</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Services\NavigationService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MunicplNavigationService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AgencyItemViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AgencyListViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\IMunicplViewModel.cs" />

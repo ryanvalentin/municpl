@@ -9,7 +9,7 @@ namespace Municpl.Core.ViewModels
 {
     public class MainViewModel : MunicplBaseViewModel, IMunicplViewModel
     {
-        private INextbusDataService _nextbusDataService { get; set; }
+        private INextbusDataService _nextbusDataService;
 
         public MainViewModel(INextbusDataService nextbusDataService, INavigationService navigationService)
             : base("main", "Municpl", navigationService)
@@ -18,6 +18,7 @@ namespace Municpl.Core.ViewModels
 
             Favorites = new FavoritesListViewModel();
             Agencies = new AgencyListViewModel();
+            Agencies.Initialize(null);
         }
 
         private FavoritesListViewModel _favorites;

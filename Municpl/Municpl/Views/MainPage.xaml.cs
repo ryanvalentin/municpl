@@ -22,10 +22,11 @@ namespace Municpl.Views
 {
     public sealed partial class MainPage : BaseNavigationAwarePage
     {
-        public MainPage()
+        public MainPage(Frame frame)
             : base()
         {
             InitializeComponent();
+            mainPageSplitView.Content = frame;
         }
 
         public MainViewModel ViewModel
@@ -53,7 +54,8 @@ namespace Municpl.Views
 
         private void actransitRadioButton_Checked(object sender, RoutedEventArgs e)
         {
-
+            ViewModel.Agencies.SelectedItem = ViewModel.Agencies.ACTransit;
+            ViewModel.NavigationService.NavigateTo(nameof(RouteListPage));
         }
 
         private void caltrainRadioButton_Checked(object sender, RoutedEventArgs e)
@@ -68,12 +70,13 @@ namespace Municpl.Views
 
         private void muniRadioButton_Checked(object sender, RoutedEventArgs e)
         {
-
+            ViewModel.Agencies.SelectedItem = ViewModel.Agencies.SFMuni;
+            ViewModel.NavigationService.NavigateTo(nameof(RouteListPage));
         }
 
         private void favoritesRadioButton_Checked(object sender, RoutedEventArgs e)
         {
-
+            ViewModel.NavigationService.NavigateTo(nameof(FavoritesPage));
         }
     }
 }

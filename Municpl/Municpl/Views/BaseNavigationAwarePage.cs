@@ -13,8 +13,8 @@ namespace Municpl.Views
     {
         public BaseNavigationAwarePage()
         {
-            if (ApiInformation.IsTypePresent("Windows.Phone.UI.Input.HardwareButtons"))
-                HardwareButtons.BackPressed += OnBackPressed;
+            //if (ApiInformation.IsTypePresent("Windows.Phone.UI.Input.HardwareButtons"))
+                //HardwareButtons.BackPressed += OnBackPressed;
         }
 
         private void OnBackPressed(object sender, BackPressedEventArgs e)

@@ -6,18 +6,19 @@ using Windows.UI.Xaml.Controls;
 
 namespace Municpl.Core.Services
 {
-    /*
-    public class NavigationService : INavigationService
+    public class MunicplNavigationService : INavigationService
     {
-        public string CurrentPageKey { get; protected set; }
-
-        public Frame RootFrame { get; set; }
-
-        public NavigationService(Frame rootFrame)
+        private readonly Dictionary<string, Type> _keyPageTypeMapping;
+        
+        public MunicplNavigationService(Frame rootFrame)
         {
             RootFrame = rootFrame;
             _keyPageTypeMapping = new Dictionary<string, Type>();
         }
+
+        public string CurrentPageKey { get; protected set; }
+
+        public Frame RootFrame { get; set; }
 
         public void GoBack()
         {
@@ -39,12 +40,9 @@ namespace Municpl.Core.Services
             RootFrame?.Navigate(_keyPageTypeMapping[pageKey], parameter);
         }
 
-        private readonly Dictionary<string, Type> _keyPageTypeMapping = new Dictionary<string, Type>()
+        public void Configure(string pageKey, Type pageType)
         {
-            { nameof(MainPage), typeof(MainPage) },
-            { nameof(AgencyListPage), typeof(AgencyListPage) },
-            { nameof(RouteListPage), typeof(RouteListPage) }
-        };
+            _keyPageTypeMapping[pageKey] = pageType;
+        }
     }
-    */
 }

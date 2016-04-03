@@ -17,7 +17,7 @@
         </ResourceDictionary>
     </local:BaseNavigationAwarePage.Resources>
 
-    <SplitView x:Name="mainPageSplitView" PaneBackground="{StaticResource SplitViewBackgroundBrush}" DisplayMode="CompactInline" IsPaneOpen="True" CompactPaneLength="50" OpenPaneLength="180">
+    <SplitView x:Name="mainPageSplitView" PaneBackground="{StaticResource SplitViewBackgroundBrush}" DisplayMode="CompactInline" IsPaneOpen="False" CompactPaneLength="48" OpenPaneLength="180">
         <SplitView.Pane>
             <StackPanel>
                 <!-- Menu -->

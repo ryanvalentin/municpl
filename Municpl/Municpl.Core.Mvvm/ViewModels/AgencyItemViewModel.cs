@@ -10,6 +10,11 @@ namespace Municpl.Core.ViewModels
 {
     public class AgencyItemViewModel : MunicplBaseViewModel, IMunicplViewModel
     {
+        public const string SFMuniId = "sf-muni";
+        public const string ACTransitId = "actransit";
+        public const string CaltrainId = "caltrain";
+        public const string BartId = "bart";
+
         public AgencyItemViewModel(NextbusAgency agencyData)
             : base(agencyData?.Tag, agencyData?.Title)
         {

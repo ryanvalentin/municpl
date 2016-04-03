@@ -12,7 +12,6 @@ namespace Municpl.Core.ViewModels
         public RouteListViewModel(NextbusAgency agencyData = null)
             : base(agencyData?.Tag, agencyData?.Title)
         {
-
         }
 
         protected override async Task<IEnumerable<RouteItemViewModel>> GetItemsAsync()
@@ -21,7 +20,7 @@ namespace Municpl.Core.ViewModels
             var routes = await NextbusDataService.RouteListAsync(Id);
 
             foreach (var route in routes)
-                response.Add(new RouteItemViewModel(route));
+                response.Add(new RouteItemViewModel(route, Id));
 
             return response;
         }
